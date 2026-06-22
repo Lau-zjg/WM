@@ -1,0 +1,463 @@
+.dashboard {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+.info-box {
+    background-color: #334155;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-card {
+    background-color: #334155;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.spiel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.spiel-card {
+    background-color: #475569;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.tipps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tipps-card {
+    background-color: #475569;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom:  20px;
+    transition: 0.3s;
+}
+ .tipps-card:hover {
+    background-color: #64748b;
+    transform: scale(1.03);
+ }
+ .ergebnis {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid white;
+ }
+
+ .tipps-card:hover .ergebnis {
+    display:block;
+ }
+
+ .team-card,
+ .spiel-card,
+ .tipps-card,
+ .info-box {
+    transition: 0.3s;
+ }
+
+ .team-card:hover,
+ .spiel-card:hover,
+ .tipps-card:hover,
+ .info-box:hover {
+    background-color: #64748b;
+    transform: scale(1.03);
+    cursor: pointer;
+ }
+
+ .gruppen-menue {
+    margin: 30px 0;
+ }
+
+ .gruppen-menue button {
+    background-color: #334155;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+ .gruppen-menue button:hover {
+    background-color: #64748b;
+    transform: scale(1.05);
+ }
+
+
+
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+}
+
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: #334155;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #64748b;
+    transform: scale(1.05);
+}
+
+.content {
+    flex: 1;
+}
+
+
+.gruppen-menue button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ .aktiv {
+    background-color: #64748b !important;
+    transform: scale(1.05);
+ }
+
+ #gruppe-a,
+ #gruppe-b,
+ #gruppe-c,
+ #gruppe-d,
+ #gruppe-e,
+ #gruppe-f,
+ #gruppe-g,
+ #gruppe-h,
+ #gruppe-i,
+ #gruppe-j,
+ #gruppe-k,
+ #gruppe-l,
+ #turnierbaum {
+    display: none;
+ } 
+ 
+ 
+ #home-btn {
+    cursor: pointer;
+ }
+
+ #home-btn:hover {
+    color: #94a3b8;
+ }
+
+ .welcome {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .welcome h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+ }
+
+.welcome h2 {
+    font-size: 2rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+ .welcome p {
+  max-width: 600px;
+  color: #94a3b8;
+ }
+
+ .welcome {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+ }
+
+
+.flip-team-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.flip-team-card.gedreht .flip-team-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-team-back {
+    transform: rotateY(180deg);
+}
+
+.flip-team-card {
+    height: 400px;
+    width: 100%;
+    perspective: 1000px;
+    background: transparent;
+}
+
+
+.flip-team-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.flip-team-front,
+.flip-team-back {
+    position: absolute;
+    inset: 0;
+    background-color: #334155;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.flip-team-card {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.flip-team-inner {
+    background-color: transparent;
+}
+
+.flip-team-front,
+.flip-team-back {
+    position: absolute;
+    inset: 0;
+
+    background-color: #334155;
+    border-radius: 15px;
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-team-front {
+    transform: rotateY(0deg);
+}
+
+.flip-team-back {
+    transform: rotateY(180deg)
+}
+
+.flip-team-card:hover .flip-team-front,
+.flip-team-card:hover .flip-team-back {
+    background-color: #64748b;
+    cursor: pointer;
+}
+
+.flip-team-card,
+.flip-team-inner,
+.flip-team-front,
+.flip-team-back {
+    border-radius: 15px;
+}
+
+.flip-team-card {
+    overflow: hidden;
+}
+
+.ausgeschieden {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.ausgeschieden-label {
+    background-color: #dc2626;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.start-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    max-width: 800px;
+}
+
+.start-card {
+    background-color: #334155;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.start-card:hover {
+    background-color: #64748b;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+#gruppen-auswahl{
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+}
+
+.sidebar {
+    display: none;
+    width: 220px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.gruppen-button {
+    display: none;
+}
+
+.bracket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 40px;
+}
+.bracket-column, .bracket-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.bracket-column:nth-child(2), .bracket-column:nth-child(8) {
+    gap: 60px;
+}
+
+.bracket-column:nth-child(3), .bracket-column:nth-child(7) {
+    gap: 140px;
+}
+
+.bracket-column:nth-child(4), .bracket-column:nth-child(6) {
+    gap: 300px;
+}
+
+.bracket-final {
+    justify-content: center;
+}
+
+.spiel {
+    background-color: #334155;
+    padding: 14px;
+    border-radius: 10px;
+    min-width: 120px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+}
+
+.spiel:hover {
+    background-color: #64748b;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.spiel::after {
+   display: none;
+}
+
+
+
+.bracket-final .spiel::after {
+    display: none;
+}
+
+.finalspiel {
+    background-color: #475569;
+    font-weight: bold;
+}
+
+#gruppen-toggle {
+    background-color: #334155;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 12px;
+}
+
+#gruppen-toggle:hover {
+    background-color: #64748b;
+    transform: scale(1.05);
+}
+
+.gruppen-button {
+    display: none;
+}
